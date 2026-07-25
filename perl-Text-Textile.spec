@@ -1,15 +1,15 @@
 %define upstream_name    Text-Textile
-%define upstream_version 2.12
+%define upstream_version 2.13
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Transforms text in Textile format to HTML
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/bradchoate/text-textile/tree/master
+Source0:	https://cpan.metacpan.org/authors/id/B/BC/BCHOATE/Text-Textile-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
