@@ -9,7 +9,7 @@ Summary:	Transforms text in Textile format to HTML
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/bradchoate/text-textile/tree/master
-Source0:	https://cpan.metacpan.org/authors/id/B/BC/BCHOATE/Text-Textile-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BC/BCHOATE/Text-Textile-2.13.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -40,15 +40,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/*
 
 
-%changelog
-* Sun Apr 17 2011 Funda Wang <fwang@mandriva.org> 2.120.0-2mdv2011.0
-+ Revision: 654333
-- rebuild for updated spec-helper
-
-* Sun Nov 29 2009 Jérôme Quelin <jquelin@mandriva.org> 2.120.0-1mdv2011.0
-+ Revision: 471081
-- import perl-Text-Textile
-
-
-* Sun Nov 29 2009 cpan2dist 2.12-1mdv
-- initial mdv release, generated with cpan2dist
