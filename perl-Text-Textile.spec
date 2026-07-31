@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	2.13
-Release:	12
+Release:	1
 
 Summary:	Transforms text in Textile format to HTML
 License:	GPL+ or Artistic
@@ -26,18 +26,18 @@ Transforms text in Textile format to HTML.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
+%make_build
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install
 %makeinstall_std
 
 %files
-%doc Changes README
+%doc Changes META.yml README.textile
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
