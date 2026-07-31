@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	2.13
-Release:	9
+Release:	10
 
 Summary:	Transforms text in Textile format to HTML
 License:	GPL+ or Artistic
