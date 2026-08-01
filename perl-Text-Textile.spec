@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	2.13
-Release:	3
+Release:	4
 
 Summary:	Transforms text in Textile format to HTML
 License:	GPL+ or Artistic
@@ -41,9 +41,4 @@ make test || :
 %{_bindir}/textile
 %{_mandir}/man1/*
 %{_mandir}/man3/*
-
-%doc Changes META.yml README.textile
-%{_mandir}/man3/*
-%{perl_vendorlib}/*
-
 
